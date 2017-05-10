@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.bai11_radiobutton.MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FF5A"
+        android:text="Bạn thích anh ấy không?" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/radRatThich"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Rất thích" />
+
+        <RadioButton
+            android:id="@+id/radHoiThich"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hơi hơi thích" />
+
+        <RadioButton
+            android:id="@+id/radlunglay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Không lung lay" />
+
+        <RadioButton
+            android:id="@+id/radGhet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhìn mặt thấy ghét" />
+
+        <RadioButton
+            android:id="@+id/radBaoCongAn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Nhìn mặt muốn báo công an" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnVote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vote" />
+
+    <TextView
+        android:id="@+id/txtXuat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+</LinearLayout>

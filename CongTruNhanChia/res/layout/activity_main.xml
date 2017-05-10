@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.congtrunhanchia.MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="A =" />
+
+        <EditText
+            android:id="@+id/editA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.42"
+            android:ems="10" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B =" />
+
+        <EditText
+            android:id="@+id/editB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chọn thao tác" />
+
+    <RadioGroup
+        android:id="@+id/radGroupThaoTac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/radCong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Cộng" />
+
+        <RadioButton
+            android:id="@+id/radTru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trừ" />
+
+        <RadioButton
+            android:id="@+id/radnhan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhân" />
+
+        <RadioButton
+            android:id="@+id/radChia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chia" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnThucHien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thực Hiện" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kết quả" />
+
+        <EditText
+            android:id="@+id/editKQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" />
+
+    </LinearLayout>
+
+</LinearLayout>
