@@ -1,0 +1,109 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.bai13_4.MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#008000"
+        android:gravity="center"
+        android:text="Quản Lý Nhân Viên"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mã NV" />
+
+        <EditText
+            android:id="@+id/editMa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên NV" />
+
+        <EditText
+            android:id="@+id/editTen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loại NV" />
+
+        <RadioGroup
+            android:id="@+id/radGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/radChinhThuc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Chính Thức" />
+
+            <RadioButton
+                android:id="@+id/radThoiVu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thời Vụ" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnNhap"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Nhập NV" />
+
+    <TextView
+        android:id="@+id/txtHienThi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#008000"
+        android:text="TextView" />
+
+    <ListView
+        android:id="@+id/lvNhanVien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>
